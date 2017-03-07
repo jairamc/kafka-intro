@@ -163,6 +163,8 @@ consumer group, the partitions are re-divided.
 
 ## Distribution
 
+![Log Well And Prosper](images/log_well_prosper.jpg)
+
 ~~~
 
 Each server in a Kafka cluster is called a _broker_.
@@ -197,6 +199,8 @@ Each _broker_ acts as a _leader_ for some of its partitions and a _follower_ for
 ---
 
 ## Replication
+
+![Repeat Myself](images/repeat_myself.jpg)
 
 ~~~
 
