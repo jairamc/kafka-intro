@@ -1,4 +1,6 @@
-# Introduction to Kafka
+# Introduction
+# to
+# Kafka
 
 ---
 
@@ -277,5 +279,6 @@ Authorization:
 
 ## Thank You
 
-- Slides can be found at https://github.com/jairamc/kafka-intro
-- Kafka documentation can be found at http://kafka.apache.org/documentation/
+- [Slides](https://github.com/jairamc/kafka-intro)
+- [Kafka documentation](http://kafka.apache.org/documentation/)
+- [Kafka papers and presentation](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+papers+and+presentations)
