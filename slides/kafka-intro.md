@@ -30,6 +30,12 @@ It is a very good intro and I highly recommend reading it
 - Must handle low-latency delivery to handle more traditional messaging use-cases. <!-- .element: class="fragment" -->
 - Must support partitioned, distributed, real-time processing of these feeds to create new, derived feeds. <!-- .element: class="fragment" -->
 
+note:
+- High write throughput
+- Large storage
+- High read throughput
+- Must be scalable
+
 ---
 
 ## What is Kafka?
@@ -53,6 +59,10 @@ It gets used for two broad classes of application:
 
 - Building real-time streaming data pipelines that reliably get data between systems or applications <!-- .element: class="fragment" -->
 - Building real-time streaming applications that transform or react to the streams of data <!-- .element: class="fragment" -->
+
+note:
+- Message queues or buffers
+- ETL pipelines
 
 ---
 
@@ -130,10 +140,10 @@ Kafka's performance is effectively constant with respect to data size so storing
   - Low-Level - Explicit offset tracking
 
 note:
-If all the consumer instances have the same consumer group, then the records will effectively be load balanced over the consumer instances.
-If all the consumer instances have different consumer groups, then each record will be broadcast to all the consumer processes.
-Partitions are divided equally amongst the consumer instances. If instances join/leave a
-consumer group, the partitions are re-divided.
+Same consumer group, records load balanced across consumers instances
+Different consumer groups, then its a broadcast
+Partitions are divided equally amongst the consumer instances.
+If instances join/leave a consumer group, the partitions are re-divided.
 
 ---
 
